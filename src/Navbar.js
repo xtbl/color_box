@@ -4,6 +4,7 @@ import Slider from 'rc-slider';
 import './Navbar.css';
 import { MenuItem, Snackbar, IconButton, Select } from '@material-ui/core';
 import { Close } from '@material-ui/icons';
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
     constructor(props) {
@@ -25,6 +26,7 @@ class Navbar extends Component {
         return (
             <div className="Navbar">
                 <div className="logo">
+                    <Link to={'/'}>reactcolorpicker</Link>
                     <a href="#link">reactcolorpicker</a>
                 </div>
                 <div className="slider-container">
